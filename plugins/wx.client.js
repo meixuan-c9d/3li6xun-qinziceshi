@@ -38,7 +38,7 @@ ${jssdkReady}
           const titleShare = '原来家长与孩子间还有这层关系？'
           const descriptionShare = '快来测测你和孩子是哪种缘定的关系。'
           const linkShare = 'http://www.c9-d.com/3li6xun/qinziceshi'
-          const thumbnailShare = 'http://www.c9-d.com/3li6xun/qinziceshi/wx.thumbnail.jpg'
+          const thumbnailShare = 'http://www.c9-d.com/3li6xun/qinziceshi.thumbnail.jpg'
 
           if (jssdkReady) {
             wx.updateAppMessageShareData({ 

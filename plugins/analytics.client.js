@@ -3,6 +3,8 @@ import 'whatwg-fetch'
 const API_ANALYTICS = 'http://47.116.129.205:8081'
 export default (context, inject) => {
   const analytics = (route) => {
+
+    if (process.env.NODE_ENV !== 'production') return
     
     fetch(
       `${API_ANALYTICS}/` +

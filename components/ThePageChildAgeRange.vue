@@ -79,7 +79,7 @@
       :is-symbol="buttonProceedIsSymbol"
     /> -->
 
-    <TheGuideSelect />
+    <TheGuideSelect guide-text="点击按钮选择" />
     
   </article>
 </template>

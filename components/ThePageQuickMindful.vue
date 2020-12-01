@@ -241,7 +241,7 @@ export default {
       width: var(--width);
       padding-bottom: calc(var(--width) / 1.067);
       top: 34.753%;
-      right: -1.416%;
+      right: 6.515%;
       &::before {
         content: '2';
         left: 38.393%;

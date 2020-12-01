@@ -4,6 +4,9 @@ import 'whatwg-fetch'
 export default function(context, inject) {
 
   const wxConfig = () => {
+    
+    if (process.env.NODE_ENV !== 'production') return
+
     if (!wx) {
       console.error(`
 wx not found

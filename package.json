@@ -1,0 +1,32 @@
+{
+  "name": "qinziceshi",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "SHOW_WEIXIN_TITLE_BAR=1 nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "core-js": "^3.7.0",
+    "gsap": "^3.5.1",
+    "lazysizes": "^5.2.2",
+    "nuxt": "^2.14.7",
+    "promise-polyfill": "8.2.0",
+    "whatwg-fetch": "^3.5.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.0.0",
+    "postcss-css-variables": "^0.17.0",
+    "postcss-nested": "^4.2.3",
+    "postcss-nested-ancestors": "^2.0.0"
+  },
+  "browserslist": [
+    "last 2 versions",
+    "Safari >= 10",
+    "iOS >= 10",
+    "not ie <= 10",
+    "> 1%"
+  ]
+}

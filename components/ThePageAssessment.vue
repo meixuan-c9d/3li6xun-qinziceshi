@@ -68,6 +68,7 @@
       <figure 
         v-show="isImageShareShown"
         class="assessment__reportImage"
+        data-long-press-delay="800"
       >
         <picture>
           <source 
@@ -100,6 +101,9 @@ import {
   mapState,
   mapMutations
 } from 'vuex'
+if (process.client) {
+  require('long-press-event/dist/long-press-event.min')
+}
 export default {
   data() {
     return {
@@ -165,6 +169,9 @@ export default {
     },
 
     shareImage() {
+
+      this.$analytics('share-button-clicked')
+
       this.isImageSaveShown = false
       this.isImageShareShown = true
       this.isLayerReportImageShown = true
@@ -183,7 +190,11 @@ export default {
     }
   },
   mounted() {
-    
+    this.$el.querySelector('.assessment__reportImage')
+      .addEventListener('long-press', e => {
+        e.preventDefault()
+        this.$analytics('share-image-held')
+      })
   }
 }
 </script>

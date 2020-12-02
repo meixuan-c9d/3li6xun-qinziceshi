@@ -114,7 +114,7 @@
       
     </section> -->
 
-    <section 
+    <!-- <section 
       v-for="number of 3"
       class="preface__headerCenter preface__headerCenter--textBlock2"
       :class="[`preface__headerCenter--textBlock${number + 1}`]"
@@ -130,7 +130,7 @@
           class="lazyload"
         />
       </picture>
-    </section>
+    </section> -->
     
     <transition
       @enter="whenStartButtonEnters"
@@ -266,33 +266,37 @@ export default {
       
     // timeline.timeScale(5)
 
-    const timeline = gsap.timeline({
-      onComplete: () => {
-        setTimeout(() => {
-          this.isStartButtonShown = true
-        }, 500)
-      }
-    })
-    timeline
-      .to(this.$refs.textBlock1, 1.75, {
-        delay: 2,
-        autoAlpha: 0
-      })
-      .to(this.$refs.textBlock2, 1.75, {
-        autoAlpha: 1
-      })
-      .to(this.$refs.textBlock2, 1.75, {
-        autoAlpha: 0
-      }, '>1')
-      .to(this.$refs.textBlock3, 1.75, {
-        autoAlpha: 1
-      })
-      .to(this.$refs.textBlock3, 1.75, {
-        autoAlpha: 0
-      })
-      .to(this.$refs.textBlock4, 1.75, {
-        autoAlpha: 1
-      })
+    // const timeline = gsap.timeline({
+    //   onComplete: () => {
+    //     setTimeout(() => {
+    //       this.isStartButtonShown = true
+    //     }, 500)
+    //   }
+    // })
+    // timeline
+    //   .to(this.$refs.textBlock1, 1.75, {
+    //     delay: 2,
+    //     autoAlpha: 0
+    //   })
+    //   .to(this.$refs.textBlock2, 1.75, {
+    //     autoAlpha: 1
+    //   })
+    //   .to(this.$refs.textBlock2, 1.75, {
+    //     autoAlpha: 0
+    //   }, '>1')
+    //   .to(this.$refs.textBlock3, 1.75, {
+    //     autoAlpha: 1
+    //   })
+    //   .to(this.$refs.textBlock3, 1.75, {
+    //     autoAlpha: 0
+    //   })
+    //   .to(this.$refs.textBlock4, 1.75, {
+    //     autoAlpha: 1
+    //   })
+
+    setTimeout(() => {
+      this.isStartButtonShown = true
+    }, 500)
     
     if (window.scriptLoadedJweixin) {
       this.$wxConfig()

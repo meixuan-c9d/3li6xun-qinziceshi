@@ -12,6 +12,7 @@
     "core-js": "^3.7.0",
     "gsap": "^3.5.1",
     "lazysizes": "^5.2.2",
+    "long-press-event": "^2.4.2",
     "nuxt": "^2.14.7",
     "promise-polyfill": "8.2.0",
     "whatwg-fetch": "^3.5.0"

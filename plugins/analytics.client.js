@@ -12,7 +12,7 @@ export default (context, inject) => {
       `${route}`,
       {
         headers: {
-          'Analytics-Token': '3/aehCPAp5MZYmwUJx9jGA=='
+          'X-Analytics-Token': '3/aehCPAp5MZYmwUJx9jGA=='
         }
       }
     )

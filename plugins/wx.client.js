@@ -19,7 +19,11 @@ wx not found
     fetch(
       `${ADDRESS_WX_CONFIG}` +
       '?' +
-      `url=${url}`
+      `url=${url}`, {
+        method: 'GET',
+        credentials: 'include',
+        mode: 'cors'
+      }
     )
       .then(response => response.json())
       .then(response => {

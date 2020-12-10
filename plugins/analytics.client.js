@@ -13,7 +13,8 @@ export default (context, inject) => {
       {
         headers: {
           'X-Analytics-Token': '3/aehCPAp5MZYmwUJx9jGA=='
-        }
+        },
+        credentials: 'include'
       }
     )
   }

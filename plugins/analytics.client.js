@@ -11,7 +11,7 @@ export default (context, inject) => {
       `qinziceshi/` +
       `${route}`,
       {
-        credentials: 'include',
+        // credentials: 'same-origin',
         headers: {
           'X-Analytics-Token': '3/aehCPAp5MZYmwUJx9jGA=='
         }

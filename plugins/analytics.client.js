@@ -4,8 +4,6 @@ const API_ANALYTICS = 'http://47.116.129.205:8081'
 export default (context, inject) => {
   const analytics = (route) => {
 
-    return
-
     // if (process.env.NODE_ENV !== 'production') return
     
     fetch(
@@ -13,7 +11,6 @@ export default (context, inject) => {
       `qinziceshi/` +
       `${route}`,
       {
-        credentials: 'include',
         headers: {
           'X-Analytics-Token': '3/aehCPAp5MZYmwUJx9jGA=='
         }

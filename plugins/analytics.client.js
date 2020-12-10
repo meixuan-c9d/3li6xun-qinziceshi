@@ -11,10 +11,10 @@ export default (context, inject) => {
       `qinziceshi/` +
       `${route}`,
       {
+        credentials: 'include',
         headers: {
           'X-Analytics-Token': '3/aehCPAp5MZYmwUJx9jGA=='
-        },
-        // credentials: 'include'
+        }
       }
     )
   }

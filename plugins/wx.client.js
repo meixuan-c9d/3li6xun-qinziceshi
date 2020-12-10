@@ -19,10 +19,7 @@ wx not found
     fetch(
       `${ADDRESS_WX_CONFIG}` +
       '?' +
-      `url=${url}`,
-      {
-        credentials: 'include'
-      }
+      `url=${url}`
     )
       .then(response => response.json())
       .then(response => {

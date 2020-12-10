@@ -21,6 +21,7 @@ wx not found
       '?' +
       `url=${url}`, 
       {
+        method: 'GET',
         credentials: 'include'
       }
     )
